@@ -26,5 +26,4 @@ for(let r=0;r<4;r++){if(!R[r].length)continue;
 let A2=A.slice();for(let r2=0;r2<4;r2++)if(r2!=r)for(let b of r2<r?J[r2]:R[r2])A2[b]=1;
 let x=S(w,A2,J[r],R[r],pp);if(!x)return null;m+=x[0];pp=x[1]}
 return m};
-c(O);
-for(let i=1;i<6;i++){let d="i00"+i,x=Y(a(I+"/"+d+"/level.txt","utf8"));c(O+"/"+d);b(O+"/"+d+"/solution.txt",(x||"")+"\n")}
+for(let i=1;i<6;i++){let d="i00"+i,x=Y(a(I+"/"+d+"/level.txt","utf8"));c(O+"/"+d,{recursive:true});b(O+"/"+d+"/solution.txt",(x||"")+"\n")}
